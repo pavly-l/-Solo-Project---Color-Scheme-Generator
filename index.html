@@ -1,0 +1,45 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <form id="color-form">
+                <div id="color-picker-wrapper">
+                    <input type="color" value="#ff0000" id="color-picker">
+                </div>
+                <select id="color-mode">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome Dark</option>
+                    <option value="monochrome-light">Monochrome Light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic Complement</option>
+                    <option value="triad">Triad</option>
+                    <option value="quad">Quad</option>
+                </select>
+                <input type="submit" value="Get color scheme">
+            </form>  
+        </header>
+        
+        <main><div class="grid" id="grid">
+            <div style="background-color: #7C0303; height: 300px;"></div>
+            <div style="background-color: #AF0404; height: 300px;"></div>
+            <div style="background-color: #E20303; height: 300px;"></div>
+            <div style="background-color: #FD1C1C; height: 300px;"></div>
+            <div style="background-color: #FE4D4D; height: 300px;"></div>
+            </div>
+        </main>
+        <footer class="grid" id="footer-grid">
+            <button data-colorid=#7C0303 id=#7C0303>#7C0303</button>
+            <button data-colorid=#AF0404 id=#AF0404>#AF0404</button>
+            <button data-colorid=#E20303 id=#E20303>#E20303</button>
+            <button data-colorid=#FD1C1C id=#FD1C1C>#FD1C1C</button>
+            <button data-colorid=#FE4D4D id=#FE4D4D>#FE4D4D</button>
+        </footer>
+        <script src="index.js"></script>
+    </body>
+</html>
